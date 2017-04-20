@@ -1,0 +1,117 @@
+html, body{
+  background: url(http://s12.postimg.org/j29e9lzul/flower_1158875_1280.jpg) no-repeat fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;  
+}
+.well, .thumbnail{
+  border-radius: 0px;
+}
+#gk-bg{
+    background: transparent;
+    position: relative;
+}
+
+#video-header{
+    position: absolute;
+    top: 30%;
+    left: 28%;
+}
+#video-header h1{
+  color: white;
+}
+
+#arrow {
+  color: black;
+}
+
+h1{
+  font-family: 'Courgette', arial; 
+  margin-bottom:40px;
+}
+
+h2 {
+  color: black;
+}
+
+p{
+  font-family: arial;
+  font-size: 20px;  
+}
+
+.menu{
+  font-family: 'Courgette', arial;
+  color: #fff;
+}
+
+#home, #about, #contact {
+  min-height: 650px;
+  vertical-align: middle;
+  padding: 150px 0 100px 0;
+}
+#home{
+  padding: 0 0 0 0;
+}
+
+#portfolio{
+  background: rgba(255,255,255,0.3);
+}
+
+#about,#contact, #credits{
+  background: rgba(255,255,255,0.9);
+}
+
+#portfolio {
+  padding: 50px 0 75px 0;
+}
+
+.btn{
+  border-radius: 0px;
+  padding: 15px;
+  margin-bottom: 15px; 
+  white-space: normal;
+}
+
+#media-btn{
+  display: block;
+}
+
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+  
+}
+
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size: 3em;
+	}
+	.page-section h2 {
+		font-size: 2em;
+	}
+	.page-section p {
+		font-size: 1em;
+		margin: 0 0 20px;
+	}
+}
+@media (max-width: 1218px) {
+	 #vid, #media-btn{
+    display: none;
+  }
+  #video-header{
+    margin-top: 30%;
+    position: static;
+    
+  }
+  #video-header h1{
+    color: black;
+  }
+  #home{
+    background: rgba(255,255,255,0.3);
+  }
+}

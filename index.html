@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" ng-app="portfolioApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.1/angular-route.min.js"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="portfolio.js"></script>
+    <script src="app.module.js"></script>
+    <script src="navbar/navbar-list.module.js"></script>
+    <script src="navbar/navbar-list.component.js"></script>
+    <script src="projects/project-list.module.js"></script>
+    <script src="projects/project-list.component.js"></script>
+
+</head>
+
+<body>
+    <nav-list></nav-list>
+    <main>
+        <section id="home" class="container text-center">
+            <div id="gk-bg">
+                <video id="vid" width="100%" poster="http://s33.postimg.org/sfakeo6un/N_vtelen.png" autoplay loop>
+                    <source src="https://drive.google.com/uc?export=download&id=0BxiY9ZXraPmKb1dvZExsV2ExSGs" type="video/mp4">
+                    <source src="https://drive.google.com/uc?export=download&id=0BxiY9ZXraPmKWWJyQ0k4d0tvelk" type="video/mp4">
+                </video>
+                <header id="video-header">
+                    <h1>Welcome!</h1>
+                    <a href="#" class="scroll-link" data-id="about">
+                        <button class="btn btn-default">
+      <p>About me</p>
+    </button>
+                    </a>
+                    <a href="#" class="scroll-link" data-id="portfolio">
+                        <button class="btn btn-default">
+      <p>Check out my portfolio</p>
+    </button>
+                    </a>
+                    <a href="#" class="scroll-link" data-id="contact">
+                        <button class="btn btn-default">
+      <p>Contact me via...</p>
+    </button>
+                    </a>
+                    <div id="media-btn">
+                        <button onclick="playVideo();" id="play" class="btn btn-default glyphicon glyphicon-play-circle"></button>
+
+                        <button onclick="pauseVideo();" id="pause" class="btn btn-default glyphicon glyphicon-pause
+"></button>
+                    </div>
+                </header>
+            </div>
+        </section>
+        <!--/#home-->
+
+        <section id="about" class="container text-center">
+            <header>
+                <h1>About me <a href="#" class="scroll-top back-to-top"><span id="arrow" class="glyphicon glyphicon-home"></span></a></h1>
+            </header>
+            <p class="caption">I am learning web-development at Free Code Camp, and this page is designed to show my portfolio. At the moment,
+                there is not much to see, but this will change soon.</p>
+            <a href="#" class="scroll-link" data-id="portfolio">
+                <button class="btn btn-default">
+      <p>Let's see that portfolio!</p>
+    </button>
+            </a>
+        </section>
+        <!--/#about-->
+
+        <section id="portfolio" class="container text-center">
+            <header>
+                <h1>My portfolio <a href="#" class="scroll-top back-to-top"><span id="arrow" class="glyphicon glyphicon-home"></span></a></h1>
+            </header>
+            <project-list></project-list>
+            <a href="#" class="scroll-link" data-id="contact">
+                <button class="btn btn-default">
+                <p>Wondering how you can reach me?</p>
+            </button>
+            </a>
+        </section>
+        <!--/#portfolio-->
+    </main>
+    <footer id="contact" class="container text-center">
+        <h1>Contact me <a href="#" class="scroll-top back-to-top"><span id="arrow" class="glyphicon glyphicon-home"></span></a></h1>
+        <p class="caption">
+            <a href="https://hu.linkedin.com/in/nemethadrienn
+" target="_blank" class="btn-block">
+                <button class="btn-default"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></button>
+            </a>
+            <a href="http://www.freecodecamp.com/adrinemeth" target="_blank" class="btn-block">
+                <button class="btn-default"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></button>
+            </a>
+            <a href="https://github.com/adrinemeth" target="_blank" class="btn-block">
+                <button class="btn-default"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></button>
+            </a>
+        </p>
+    </footer>
+    <!--/#contact-->
+</body>
+
+</html>

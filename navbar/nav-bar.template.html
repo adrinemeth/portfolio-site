@@ -1,0 +1,23 @@
+<nav class=" navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            <p class="menu ">ADRI NEMETH</p>
+        </a>
+        <nav class=" navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <p class="menu ">ADRI NEMETH</p>
+                </a>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li ng-repeat="navbarItem in $ctrl.navbarItems">
+                            <a href="#" class="scroll-link" data-id={{navbarItem.id}}>
+                                <p class="menu"><span class={{navbarItem.icon}}></span>{{navbarItem.name}}</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</nav>
