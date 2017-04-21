@@ -8,9 +8,9 @@ angular.
         {
           btnText: 'About me',
         }, {
-          btnText: 'Portfolio',
+          btnText: 'Check out my portfolio',
         }, {
-          btnText: 'Contact',
+          btnText: 'Contact me',
         }
       ];
     }
