@@ -35,21 +35,13 @@
                 </video>
                 <header id="video-header">
                     <h1>Welcome!</h1>
-                    <a href="#" class="scroll-link" data-id="about">
-                        <button class="btn btn-default">
-      <p>About me</p>
-    </button>
-                    </a>
-                    <a href="#" class="scroll-link" data-id="portfolio">
-                        <button class="btn btn-default">
-      <p>Check out my portfolio</p>
-    </button>
-                    </a>
-                    <a href="#" class="scroll-link" data-id="contact">
-                        <button class="btn btn-default">
-      <p>Contact me via...</p>
-    </button>
-                    </a>
+                    <div ng-controller="NavbuttonController" >
+                        <a ng-repeat="navbuttonItem in navbuttonItems" href="#" class="scroll-link" data-id={{}}>
+                            <button class="btn btn-default">
+                                <p>{{navbuttonItems.btnText}}</p>
+                             </button>
+                         </a>
+                     </div>
                     <div id="media-btn">
                         <button onclick="playVideo();" id="play" class="btn btn-default glyphicon glyphicon-play-circle"></button>
 
