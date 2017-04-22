@@ -21,6 +21,7 @@
     <script src="navbar/navbar-list.component.js"></script>
     <script src="projects/project-list.module.js"></script>
     <script src="projects/project-list.component.js"></script>
+   
     <script src="buttons/nav-buttons.controller.js"></script>
 
 </head>
@@ -36,13 +37,14 @@
                 </video>
                 <header id="video-header">
                     <h1>Welcome!</h1>
-                    <div ng-controller="NavbuttonController">
+                  <div ng-controller="NavbuttonController">
                         <a ng-repeat="navbuttonItem in navbuttonItems" href="#" class="scroll-link" data-id={{}}>
                             <button class="btn btn-default">
                                 <p>{{navbuttonItems.btnText}}</p>
                              </button>
                          </a>
                      </div>
+                    
                     <div id="media-btn">
                         <button onclick="playVideo();" id="play" class="btn btn-default glyphicon glyphicon-play-circle"></button>
 
