@@ -3,5 +3,6 @@
 angular.module('portfolioApp', [
   // ...which depends on the `navList` module
   'navList',
-  'projectList'
+  'projectList',
+  'navButtons'
 ]);

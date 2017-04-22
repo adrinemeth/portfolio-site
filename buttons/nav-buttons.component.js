@@ -2,8 +2,9 @@
 
 // Register `navButtons` component, along with its associated controller
 angular.
-  module('portfolioApp').
+  module('navButtons').
   component('navButtons', {
+    templateUrl: 'buttons/nav-buttons.template.html',
     controller: function NavButtonController() {
       this.navbuttonItems = [
         {
