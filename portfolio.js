@@ -1,4 +1,3 @@
-//shut the fuck up
 vid = document.querySelector("#vid");
     function playVideo() {
        vid.play();

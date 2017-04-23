@@ -1,7 +1,5 @@
-<div ng-repeat="navbuttonItem in $ctrl.navbuttonItems">
-<a href="#" class="scroll-link" data-id={{}}>
+<a ng-repeat="navbuttonItem in $ctrl.navbuttonItems" href="#" class="scroll-link" data-id={{}}>
    <button class="btn btn-default">
-     <p>{{navbuttonItems.btnText}}</p>
+     <p>{{navbuttonItem.btnText}}</p>
     </button>
 </a>
-</div>
