@@ -1,8 +1,8 @@
 to do-s:
 
-- following things should be contained in services: 
+- following things should be contained in services: DONE
     - data-ids
     - glyphicon classes
     
-- need to create a module for contact info in footer
+- need to create a module for contact info in footer: DONE
 - add videos to sources
