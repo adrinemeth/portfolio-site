@@ -3,24 +3,24 @@ angular.
   module('navList').
   component('navList', {
     templateUrl: 'navbar/nav-bar.template.html',
-    controller: function NavListController() {
+    controller: function NavListController(commonData) {
       this.navbarItems = [
         {
-          id: 'home',
+          id: commonData.ids.home,
           name: ' HOME',
-          icon: 'glyphicon glyphicon-home'
+          icon: commonData.icons.home
         }, {
-          id: 'about',
+          id: commonData.ids.about,
           name: ' ABOUT',
-          icon: 'glyphicon glyphicon-user'
+          icon: commonData.icons.user
         }, {
-          id: 'portfolio',
+          id: commonData.ids.portfolio,
           name: ' PORTFOLIO',
-          icon: 'glyphicon glyphicon-picture'
+          icon: commonData.icons.picture
         }, {
-          id: 'contact',
+          id: commonData.ids.contact,
           name: ' CONTACT',
-          icon: 'glyphicon glyphicon-envelope'
+          icon: commonData.icons.envelope
         }
       ];
     }
