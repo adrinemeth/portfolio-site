@@ -8,6 +8,11 @@ html, body{
 .well, .thumbnail{
   border-radius: 0px;
 }
+.well {
+  width: 49%;
+  display: inline-block;
+  margin-right: 10px;
+}
 #gk-bg{
     background: transparent;
     position: relative;
